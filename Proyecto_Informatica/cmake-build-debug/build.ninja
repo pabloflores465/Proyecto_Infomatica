@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug/
+cmake_ninja_workdir = /home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target Proyecto_Informatica
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = /home/pabloflores/CLionProjects/Proyecto_Informatica/cmake
 
 build cmake_object_order_depends_target_Proyecto_Informatica: phony || CMakeFiles/Proyecto_Informatica.dir
 
-build CMakeFiles/Proyecto_Informatica.dir/main.cpp.o: CXX_COMPILER__Proyecto_Informatica_Debug /home/pabloflores/CLionProjects/Proyecto_Informatica/main.cpp || cmake_object_order_depends_target_Proyecto_Informatica
+build CMakeFiles/Proyecto_Informatica.dir/main.cpp.o: CXX_COMPILER__Proyecto_Informatica_Debug /home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica/main.cpp || cmake_object_order_depends_target_Proyecto_Informatica
   DEP_FILE = CMakeFiles/Proyecto_Informatica.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/Proyecto_Informatica.dir
@@ -79,7 +79,7 @@ build Proyecto_Informatica: CXX_EXECUTABLE_LINKER__Proyecto_Informatica_Debug CM
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/ccmake -S/home/pabloflores/CLionProjects/Proyecto_Informatica -B/home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug
+  COMMAND = cd /home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/ccmake -S/home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica -B/home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -91,7 +91,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pabloflores/CLionProjects/Proyecto_Informatica -B/home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug
+  COMMAND = cd /home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica -B/home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +107,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug
+# Folder: /home/pabloflores/CLionProjects/Proyecto_Infomatica/Proyecto_Informatica/cmake-build-debug
 
 build all: phony Proyecto_Informatica
 
