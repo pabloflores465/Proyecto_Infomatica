@@ -1,0 +1,3 @@
+/home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug/CMakeFiles/Proyecto_Informatica.dir
+/home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pabloflores/CLionProjects/Proyecto_Informatica/cmake-build-debug/CMakeFiles/rebuild_cache.dir
