@@ -7,9 +7,11 @@ int main() {
                               "VICK BEBE BALSAMO 50 GRS", "TABCIN GRIPE Y TOS LIQUI-GELS", "VITAMINA C 500 MG",
                               "AZITROMICINA 500MG", "ASPIRINA ADULTOS 500 MG", " BRONCUROL",
                               "DOLO TRIVIPLEX INYECTADO"};
-    string descripcionfarmacos[10]{"Antiinflamatorio", "Medicamento para eliminar la naúseas, mareos y vómitos",
+    string descripcionfarmacos[10]{"Antiinflamatorio",
+                                   "Medicamento para eliminar la naúseas, mareos y vómitos",
                                    "Medicamento usado para el tratamiento de la indigestión, el malestar estomacal, la diarrea",
-                                   "Descongestion nasal", "Medicamento para aliviar la tos y la gripe",
+                                   "Descongestion nasal",
+                                   "Medicamento para aliviar la tos y la gripe",
                                    "Fortalece las defensas del organismo y ayuda a la cicatrizacion",
                                    "Antibiotico de amplio espectro",
                                    "Medicamento para tratar el dolor, la fiebre y la inflamación",
