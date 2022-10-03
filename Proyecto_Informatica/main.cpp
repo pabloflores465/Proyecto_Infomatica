@@ -20,7 +20,7 @@ int main() {
     string tipofarmaco[10]{"tabletas", "Bebible", "Bebible", "Gel", "tabletas", "tabletas", "tabletas", "tabletas",
                            "comprimidos", "inyeccion"};
     string cantidadfarmacos[10]{"100 tabletas", "2 ampollas", "", "", "12 tabletas", "20 tabletas", "12 tabletas",
-                               "100 tabletas", "100 comprimidos", "2 ampollas",};
+                                "100 tabletas", "100 comprimidos", "2 ampollas",};
     float preciofarmacos[10]{186.95, 26.00, 64.99, 33.02, 26.95, 28.20, 559.98, 96.76, 104.75, 50.38};
     int existenciasfarmacos[10]{20, 20, 20, 20, 20, 20, 20, 20, 20, 20};
     int modulos;
