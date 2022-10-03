@@ -9,6 +9,29 @@ int main() {
     string cantidadfarmaco [10] {"100 tabletas", "2 ampollas","", "", "12 tabletas", "20 tabletas", "12 tabletas", "100 tabletas", "100 comprimidos", "2 ampollas",  };
     float preciofarmaco [10] {186.95, 26.00, 64.99, 33.02, 26.95, 28.20, 559.98, 96.76, 104.75, 50.38   };
     int existenciasfarmacos [10] {20,20,20,20,20,20,20,20,20,20};
+    do{
+    int modulos;
+    cout<<"Ingrese al modulo que quiere ingresar\n";
+    cout<<"Para modulo de farmacia presione 1\n";
+    cout<<"Para modulo de seguros presione 2\n";
+    cout<<"Para modulo de reportes presione 3\n";
+    cin>>modulos;
+    switch(modulos)
+    {
+        case 1:
+        {
+
+        }
+        case 2:
+        {
+
+        }
+        case 3:
+        {
+
+        }
+    }
+    }
 
 
 
