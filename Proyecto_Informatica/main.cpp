@@ -10,112 +10,37 @@ int main() {
     //Arrelos para la descripcion de los farmacos
     //Modulo 1
     //Tipos de Farmacos
-    string nombrefarmacos[10]{
-        "Ibuprofeno 100mg",
-        "Nauseol 50mg",
-        "PEPTO-BISMOL Cereza 236ml",
-        "VICK BEBE BALSAMO 50 GRS",
-        "TABCIN GRIPE Y TOS LIQUI-GELS",
-        "VITAMINA C 500 MG",
-        "AZITROMICINA 500MG",
-        "ASPIRINA ADULTOS 500 MG",
-        "BRONCUROL",
-        "DOLO TRIVIPLEX INYECTADO",
-    };
+    string nombrefarmacos[10]{"Ibuprofeno 100mg","Nauseol 50mg","PEPTO-BISMOL Cereza 236ml","VICK BEBE BALSAMO 50 GRS","TABCIN GRIPE Y TOS LIQUI-GELS","VITAMINA C 500 MG","AZITROMICINA 500MG","ASPIRINA ADULTOS 500 MG","BRONCUROL","DOLO TRIVIPLEX INYECTADO",};
 
     //Modulo 1
     //Descripcion de Medicamentos
-    string descripcionfarmacos[10]{
-        "Antiinflamatorio",
-        "Medicamento para eliminar la naúseas, mareos y vómitos",
-        "Medicamento usado para el tratamiento de la indigestión, el malestar estomacal, la diarrea",
-        "Descongestion nasal",
-        "Medicamento para aliviar la tos y la gripe",
-        "Fortalece las defensas del organismo y ayuda a la cicatrizacion",
-        "Antibiotico de amplio espectro",
-        "Medicamento para tratar el dolor, la fiebre y la inflamación",
-        "Medicamento para aliviar la tos y el resfriado",
-        "Medicamento para aliviar dolores neuriticos"
-    };
+    string descripcionfarmacos[10]{"Antiinflamatorio","Medicamento para eliminar la naúseas, mareos y vómitos","Medicamento usado para el tratamiento de la indigestión, el malestar estomacal, la diarrea","Descongestion nasal","Medicamento para aliviar la tos y la gripe","Fortalece las defensas del organismo y ayuda a la cicatrizacion","Antibiotico de amplio espectro","Medicamento para tratar el dolor, la fiebre y la inflamación","Medicamento para aliviar la tos y el resfriado","Medicamento para aliviar dolores neuriticos"};
 
     //Modulo 1
     //Presentacion del Farmaco
-    string tipofarmaco[10]{
-        "tabletas",
-        "Bebible",
-        "Bebible",
-        "Gel",
-        "tabletas",
-        "tabletas",
-        "tabletas",
-        "tabletas",
-        "comprimidos",
-        "inyeccion"
-    };
+    //// Esta parte que ma volé ya que en la parte del tamaño de farmaco se indica cual es su presentacion.
+
 
     //Modulo 1
     //Tamaño del farmaco
-    string cantidadfarmacos[10]{
-        "100 tabletas",
-        "2 ampollas",
-        "",
-        "",
-        "12 tabletas",
-        "20 tabletas",
-        "12 tabletas",
-        "100 tabletas",
-        "100 comprimidos",
-        "2 ampollas",
-    };
+    string cantidadfarmacos[10]{"100 tabletas","2 ampollas","ml ","ml","12 tabletas","20 tabletas","12 tabletas","100 tabletas","100 comprimidos","2 ampollas",};
 
     //Modulo 1
     //Precio de los farmacos
-    float preciofarmacos[10]{
-        186.95,
-        26.00,
-        64.99,
-        33.02,
-        26.95,
-        28.20,
-        559.98,
-        96.76,
-        104.75,
-        50.38
-    };
+    //Cambié los arreglos para que queden en una misma linea para que así el codigo tenga menos lineas y se vea mas limpio.
+    float preciofarmacos[10]{186.95,26.00,64.99,33.02,26.95,28.20,559.98,96.76,104.75,50.38};
 
     //Modulo 1
     //Existencias de los farmacos
-    int existenciasfarmacos[10]{
-        20,
-        20,
-        20,
-        20,
-        20,
-        20,
-        20,
-        20,
-        20,
-        20
+    int existenciasfarmacos[10]{20,20,20,20,20,20,20,20,20,20
     };
 
     //Modulo 2
     //Aseguradoras Usadas
-    string aseguradora[5]{
-            "Seguros GyT",
-            "Seguro Agromercantil",
-            "Aseguradora General, S.A.",
-            "Seguros El Roble",
-            "Mapfre"
-    };
+    string aseguradora[5]{"Seguros GyT","Seguro Agromercantil","Aseguradora General, S.A.","Seguros El Roble","Mapfre"};
     //Modulo 2
     //Taza de descuento fija
-    float tazaDescuento[5]{
-            0.25,
-            0.60,
-            0.40,
-            0.5,
-            0.75,
-    };
+    float tazaDescuento[5]{0.25,0.60,0.40,0.5,0.75,};
 
     do {
         cout << "Para modulo de farmacia presione 1\n";
@@ -446,6 +371,8 @@ int main() {
                 break;
             }
         }
+
+
 
     }
     while (modulos != 4);
