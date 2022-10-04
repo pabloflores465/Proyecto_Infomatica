@@ -326,22 +326,27 @@ int main() {
                                 case 1:
                                 {
                                     descuentoaplicado=suma*0.75;
+                                    break;
                                 }
                                 case 2:
                                 {
                                     descuentoaplicado=suma*0.40;
+                                    break;
                                 }
                                 case 3:
                                 {
                                     descuentoaplicado=suma*0.60;
+                                    break;
                                 }
                                 case 4:
                                 {
                                     descuentoaplicado=suma*0.5;
+                                    break;
                                 }
                                 case 5:
                                 {
                                     descuentoaplicado=suma*0.25;
+                                    break;
                                 }
                             }
                             cout<<"El nuevo total a pagar con el descuento aplicado es de "<<descuentoaplicado<<"\n";
