@@ -217,6 +217,11 @@ int main() {
                             ii++;
                             break;
                         }
+                        default:
+                        {
+                            cout<<"Error: numero invalido";
+                            break;
+                        }
                     }
                 }
                 while(modulo1!=0);
@@ -272,6 +277,12 @@ int main() {
                                 {
                                     descuentoaplicado=suma*0.25;
                                     break;
+                                }
+                                default:
+                                {
+                                    cout<<"Error:numero invalido\n";
+                                    break;
+
                                 }
                             }
                             cout<<"El nuevo total a pagar con el descuento aplicado es de "<<descuentoaplicado<<"\n";
