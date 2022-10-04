@@ -114,13 +114,13 @@ int main() {
             0.5,
             0.75,
     };
-
+    cout << "Ingrese al modulo que quiere ingresar\n";
+    cout << "Para modulo de farmacia presione 1\n";
+    cout << "Para modulo de seguros presione 2\n";
+    cout << "Para modulo de reportes presione 3\n";
+    cout << "Ingrese el numero 3 para finalizar el proceso\n";
     do {
-        cout << "Ingrese al modulo que quiere ingresar\n";
-        cout << "Para modulo de farmacia presione 1\n";
-        cout << "Para modulo de seguros presione 2\n";
-        cout << "Para modulo de reportes presione 3\n";
-        cout << "Ingrese el numero 3 para finalizar el proceso\n";
+        cout<<"Escriba aqui el modulo al que quiere acceder\n";
         cin >> modulos;
         switch (modulos) {
             case 1: {
@@ -180,74 +180,88 @@ int main() {
                 cout<<"Las existencias de este producto son: "<<existenciasfarmacos [9]<<"\n";
 
                 do{
+                    cout<<"Escriba aqui el numero del medicamento que quiere elegir\n";
+                    cin>>modulo1;
                     switch (modulo1)
                     {
                         case 0:
                         {
                             cout<<" ";
+                            break;
                         }
                         case 1:
                         {
                             suma=suma+preciofarmacos[0];
                             existenciasfarmacos [0]--;
+                            break;
 
                         }
                         case 2:
                         {
                             suma=suma+preciofarmacos[1];
                             existenciasfarmacos [1]--;
+                            break;
                         }
                         case 3:
                         {
                             suma=suma+preciofarmacos[2];
                             existenciasfarmacos [2]--;
+                            break;
                         }
                         case 4:
                         {
                             suma=suma+preciofarmacos[3];
                             existenciasfarmacos [3]--;
+                            break;
                         }
                         case 5:
                         {
                             suma=suma+preciofarmacos[4];
                             existenciasfarmacos [4]--;
+                            break;
                         }
                         case 6:
                         {
                             suma=suma+preciofarmacos[5];
                             existenciasfarmacos [5]--;
+                            break;
                         }
                         case 7:
                         {
                             suma=suma+preciofarmacos[6];
                             existenciasfarmacos [6]--;
+                            break;
                         }
                         case 8:
                         {
                             suma=suma+preciofarmacos[7];
                             existenciasfarmacos [7]--;
+                            break;
                         }
                         case 9:
                         {
                             suma=suma+preciofarmacos[8];
                             existenciasfarmacos [8]--;
+                            break;
                         }
                         case 10:
                         {
                             suma=suma+preciofarmacos[9];
                             existenciasfarmacos [9]--;
+                            break;
                         }
-                            if (i!=0)
-                            {
-                                cout<<"Si ya no deseas seguir comprando un producto presiona 0";
-                            }
-                            i++;
                     }
+                    if (i!=0)
+                    {
+                        cout<<"\n";
+                        cout<<"Si ya no deseas seguir comprando un producto presiona 0\n";
+                    }
+                    i++;
+
 
                 }
                 while(modulo1!=0);
-
-
+            break;
             }
             case 2: {
                 //Inicia el Modulo 2
