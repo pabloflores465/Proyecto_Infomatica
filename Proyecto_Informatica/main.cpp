@@ -118,13 +118,17 @@ int main() {
     };
 
     do {
-        cout << "Para modulo de farmacia presione 1\n";
-        cout << "Para modulo de seguros presione 2\n";
-        cout << "Para modulo de reportes presione 3\n";
-        cout << "Ingrese el numero 4 para finalizar el proceso\n";
-        cout<<"Escriba aqui el modulo al que quiere acceder\n";
+        //Seleccion de modulos
+        cout<<"Escriba aqui el modulo al que quiere acceder\n"
+            <<"1=Farmacia\n"
+            <<"2=Seguros\n"
+            <<"3=Reportes\n"
+            <<"Ingrese el numero 4 para finalizar el proceso\n";
         cin >> modulos;
+
+        //Switch donde se seccionan los modulos
         switch (modulos) {
+            //Modulo 1
             case 1: {
                 int modulo1;
                 float suma=0.0;
@@ -202,6 +206,7 @@ int main() {
                     <<"Descripcion: "<<descripcionfarmacos[9]<<" "<<"("<<cantidadfarmacos[9]<<")"<<"\n"
                     <<"Las existencias de este producto son: "<<existenciasfarmacos [9]<<"\n\n";
 
+
                 do{
                     cout<<"Escriba aqui el numero del medicamento que quiere elegir";
                     if (i!=0)
@@ -221,6 +226,8 @@ int main() {
                             cout<<"\n";
                             break;
                         }
+
+                        //Producto 1
                         case 1:
                         {
                             suma=suma+preciofarmacos[0];
@@ -229,6 +236,8 @@ int main() {
                             break;
 
                         }
+
+                        //Producto 2
                         case 2:
                         {
                             suma=suma+preciofarmacos[1];
@@ -236,6 +245,8 @@ int main() {
                             ii++;
                             break;
                         }
+
+                        //Producto 3
                         case 3:
                         {
                             suma=suma+preciofarmacos[2];
@@ -243,6 +254,8 @@ int main() {
                             ii++;
                             break;
                         }
+
+                        //Producto 4
                         case 4:
                         {
                             suma=suma+preciofarmacos[3];
@@ -250,6 +263,8 @@ int main() {
                             ii++;
                             break;
                         }
+
+                        //Producto 5
                         case 5:
                         {
                             suma=suma+preciofarmacos[4];
@@ -257,6 +272,8 @@ int main() {
                             ii++;
                             break;
                         }
+
+                        //Producto 6
                         case 6:
                         {
                             suma=suma+preciofarmacos[5];
@@ -264,6 +281,8 @@ int main() {
                             ii++;
                             break;
                         }
+
+                        //Producto 7
                         case 7:
                         {
                             suma=suma+preciofarmacos[6];
@@ -271,6 +290,8 @@ int main() {
                             ii++;
                             break;
                         }
+
+                        //Producto 8
                         case 8:
                         {
                             suma=suma+preciofarmacos[7];
@@ -278,6 +299,8 @@ int main() {
                             ii++;
                             break;
                         }
+
+                        //Producto 9
                         case 9:
                         {
                             suma=suma+preciofarmacos[8];
@@ -285,12 +308,16 @@ int main() {
                             ii++;
                             break;
                         }
+                        //Producto 10
                         case 10:
                         {
                             suma=suma+preciofarmacos[9];
                             existenciasfarmacos [9]--;
                             ii++;
                             break;
+                        }
+                        default:{
+                            cout<<"Error no seleccionó un valor válido"<<endl;
                         }
                     }
                 }
@@ -325,10 +352,10 @@ int main() {
                     cout<<"\n\n"
                         <<"PAGO EXITOSO\n\n";
                 }
-
-
                 break;
             }
+
+            //Modulo 2
             case 2: {
                 //Inicia el Modulo 2
                 int seguro=0;
@@ -360,7 +387,7 @@ int main() {
                              << (tazaDescuento[seguro]) * 100 << "%" << endl;
                         break;
                     }
-                        //Aseguradora General, S.A.
+                    //Aseguradora General, S.A.
                     case 2: {
                         cout << aseguradora[seguro] << endl;
                         cout << "Su copago es: \n"
@@ -389,6 +416,8 @@ int main() {
                 }
                 break;
             }
+
+            //Modulo 3
             case 3: {
                 cout<<"aqui modulo 3\n";
                 break;
