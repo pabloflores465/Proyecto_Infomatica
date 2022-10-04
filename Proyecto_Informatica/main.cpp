@@ -202,7 +202,7 @@ int main() {
                              << (tazaDescuento[seguro]) * 100 << "%" << endl;
                         break;
                     }
-                        //Seguro Agromercantil
+                    //Seguro Agromercantil
                     case 1: {
                         cout << aseguradora[seguro] << endl;
                         cout << "Su copago es: \n"
@@ -216,21 +216,21 @@ int main() {
                              << (tazaDescuento[seguro]) * 100 << "%" << endl;
                         break;
                     }
-                        //Seguros El Roble
+                    //Seguros El Roble
                     case 3: {
                         cout << aseguradora[seguro] << endl;
                         cout << "Su copago es: \n"
                              << (tazaDescuento[seguro]) * 100 << "%" << endl;
                         break;
                     }
-                        //Mapfre
+                    //Mapfre
                     case 4: {
                         cout << aseguradora[seguro] << endl;
                         cout << "Su copago es: \n"
                              << (tazaDescuento[seguro]) * 100 << "%" << endl;
                         break;
                     }
-                        //Mensaje de Error
+                    //Mensaje de Error
                     default: {
                         cout << "Error no se seleccionó un valor válido" << endl;
                         break;
