@@ -24,6 +24,26 @@ int main() {
     float preciofarmacos[10]{186.95, 26.00, 64.99, 33.02, 26.95, 28.20, 559.98, 96.76, 104.75, 50.38};
     int existenciasfarmacos[10]{20, 20, 20, 20, 20, 20, 20, 20, 20, 20};
     int modulos;
+
+    //Modulo 2
+    //Aseguradoras Usadas
+    string aseguradora[5]{
+            "Seguros GyT",
+            "Seguro Agromercantil",
+            "Aseguradora General, S.A.",
+            "Seguros El Roble",
+            "Mapfre"
+    };
+    //Modulo 2
+    //Taza de descuento fija
+    float tazaDescuento[5]{
+            0.25,
+            0.60,
+            0.40,
+            0.5,
+            0.75,
+    };
+
     do {
         cout << "Ingrese al modulo que quiere ingresar\n";
         cout << "Para modulo de farmacia presione 1\n";
@@ -159,7 +179,63 @@ int main() {
 
             }
             case 2: {
+                //Inicia el Modulo 2
+                int seguro=0;
+                //Variable que selecciona el seguro
 
+                //Pido al usuario que ingrese el seguro
+                cout<<"Módulo de Seguros"<<endl;
+                cout<<"Para ver información de copagos (descuento sobre medicinas), por favor elija su aseguradora (ingrese un dígito)"<<endl;
+                cout<<"0=Seguros GyT\n"
+                    <<"1=Seguro Agromercantil\n"
+                    <<"2=Aseguradora General, S.A.\n"
+                    <<"3=Seguros el Roble\n"
+                    <<"4=Mapfre\n";
+                cin>>seguro;
+
+                //Aqui se Muestra la informacion de la aseguradora seleccionada
+                switch(seguro) {
+                    //Seguros GyT
+                    case 0: {
+                        cout << aseguradora[seguro] << endl;
+                        cout << "Su copago es: \n"
+                             << (tazaDescuento[seguro]) * 100 << "%" << endl;
+                        break;
+                    }
+                        //Seguro Agromercantil
+                    case 1: {
+                        cout << aseguradora[seguro] << endl;
+                        cout << "Su copago es: \n"
+                             << (tazaDescuento[seguro]) * 100 << "%" << endl;
+                        break;
+                    }
+                        //Aseguradora General, S.A.
+                    case 2: {
+                        cout << aseguradora[seguro] << endl;
+                        cout << "Su copago es: \n"
+                             << (tazaDescuento[seguro]) * 100 << "%" << endl;
+                        break;
+                    }
+                        //Seguros El Roble
+                    case 3: {
+                        cout << aseguradora[seguro] << endl;
+                        cout << "Su copago es: \n"
+                             << (tazaDescuento[seguro]) * 100 << "%" << endl;
+                        break;
+                    }
+                        //Mapfre
+                    case 4: {
+                        cout << aseguradora[seguro] << endl;
+                        cout << "Su copago es: \n"
+                             << (tazaDescuento[seguro]) * 100 << "%" << endl;
+                        break;
+                    }
+                        //Mensaje de Error
+                    default: {
+                        cout << "Error no se seleccionó un valor válido" << endl;
+                        break;
+                    }
+                }
             }
             case 3: {
 
@@ -171,80 +247,6 @@ int main() {
 
     }
     while (modulos != 3);
-    //Modulo 2
-    //Aseguradoras Usadas
-    string aseguradora[5]{
-            "Seguros GyT",
-            "Seguro Agromercantil",
-            "Aseguradora General, S.A.",
-            "Seguros El Roble",
-            "Mapfre"
-    };
-    //Modulo 2
-    //Taza de descuento fija
-    float tazaDescuento[5]{
-            0.25,
-            0.60,
-            0.40,
-            0.5,
-            0.75,
-    };
-    //Inicia el Modulo
-    int seguro=0;
-    //Variable que selecciona el seguro
 
-    //Pido al usuario que ingrese el seguro
-    cout<<"Módulo de Seguros"<<endl;
-    cout<<"Para ver información de copagos (descuento sobre medicinas), por favor elija su aseguradora (ingrese un dígito)"<<endl;
-    cout<<"0=Seguros GyT\n"
-        <<"1=Seguro Agromercantil\n"
-        <<"2=Aseguradora General, S.A.\n"
-        <<"3=Seguros el Roble\n"
-        <<"4=Mapfre\n";
-    cin>>seguro;
-
-    //Aqui se Muestra la informacion de la aseguradora seleccionada
-    switch(seguro) {
-        //Seguros GyT
-        case 0: {
-            cout << aseguradora[seguro] << endl;
-            cout << "Su copago es: \n"
-                 << (tazaDescuento[seguro]) * 100 << "%" << endl;
-            break;
-        }
-            //Seguro Agromercantil
-        case 1: {
-            cout << aseguradora[seguro] << endl;
-            cout << "Su copago es: \n"
-                 << (tazaDescuento[seguro]) * 100 << "%" << endl;
-            break;
-        }
-            //Aseguradora General, S.A.
-        case 2: {
-            cout << aseguradora[seguro] << endl;
-            cout << "Su copago es: \n"
-                 << (tazaDescuento[seguro]) * 100 << "%" << endl;
-            break;
-        }
-            //Seguros El Roble
-        case 3: {
-            cout << aseguradora[seguro] << endl;
-            cout << "Su copago es: \n"
-                 << (tazaDescuento[seguro]) * 100 << "%" << endl;
-            break;
-        }
-            //Mapfre
-        case 4: {
-            cout << aseguradora[seguro] << endl;
-            cout << "Su copago es: \n"
-                 << (tazaDescuento[seguro]) * 100 << "%" << endl;
-            break;
-        }
-            //Mensaje de Error
-        default: {
-            cout << "Error no se seleccionó un valor válido" << endl;
-            break;
-        }
-    }
     return 0;
 }
