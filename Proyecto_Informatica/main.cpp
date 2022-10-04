@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    cout<<endl;
     //NO TOCAR Seleccion de los modulos
     int modulos;
 
@@ -32,7 +33,7 @@ int main() {
 
     //Modulo 1
     //Existencias de los farmacos
-    double existenciasfarmacos[10]{20,20,20,20,20,20,20,20,20,20
+    int existenciasfarmacos[10]{20,20,20,20,20,20,20,20,20,20
     };
 
     //Modulo 2
@@ -217,6 +218,11 @@ int main() {
                             ii++;
                             break;
                         }
+                        default:
+                        {
+                            cout<<"Error: numero invalido";
+                            break;
+                        }
                     }
                 }
                 while(modulo1!=0);
@@ -225,7 +231,7 @@ int main() {
                     <<"El total de productos que usted comprara es de "<<ii<<"\n\n";
 
                 if(ii!=0) {
-                    cout<<"¿Usted cuenta con alguno de los siguientes seguro?\n"
+                    cout<<"¿Usted cuenta con alguno de los siguientes seguros?\n"
                         <<"Seguros GyT\n"
                         <<"Seguro Agromercantil\n"
                         <<"Aseguradora General, S.A.\n"
@@ -247,6 +253,7 @@ int main() {
                             cin>>dess;
                             switch (dess)
                             {
+
                                 case 1:
                                 {
                                     descuentoaplicado=suma*0.75;
@@ -272,12 +279,21 @@ int main() {
                                     descuentoaplicado=suma*0.25;
                                     break;
                                 }
+                                default:
+                                {
+                                    cout<<"Error:numero invalido\n";
+                                    break;
+
+                                }
                             }
+
                             cout<<"El nuevo total a pagar con el descuento aplicado es de "<<descuentoaplicado<<"\n";
                         }
                         else {
                             cout<<"usted no cuenta con un seguro\n";
                         }
+
+
                     cout<<"Ingrese la información de la tarjeta para pagar:\n\n"
                         <<"Ingrese el nombre del titular de la tarjeta:\n";
 
@@ -359,39 +375,7 @@ int main() {
                 break;
             }
             case 3: {
-                int info;
-                cout << "Ingrese el tipo de información que desea ver" << "\n";
-                cout << "Ingrese 1 para desplegar la informacion de la famacia \n";
-                cout << "Ingrese 2 para desplegar la información de las aseguradoras \n";
-                cin >> info;
-                switch (info)
-                {
-                    case 1:
-                        cout<<"Resumen del día \n";
-                        cout << "Inventario de medicamentos:  \n";
-                        cout << existenciasfarmacos[10] <<  "\n" ;
-                        cout << "Total de medicamentos vendidos: \n";
-                        cout << "\n";
-                        cout << "Total de clientes que compraron el día de hoy: \n";
-                        cout << "\n";
-                        cout << "Total de ventas: ";
-                        cout << "\n";
-                        break;
-                }
-                    case 2: {
-                        cout << "Clientes que usaron su seguro para comprar medicamentos: \n ";
-                        cout << "\n";
-                        cout << "La aseguradora con más afiliados es: \n";
-                        cout << "\n";
-
-                    }
-
-
-
-
-
-
-
+                cout<<"aqui modulo 3\n";
                 break;
 
             }
@@ -405,6 +389,7 @@ int main() {
 
     }
     while (modulos != 4);
+
 
     return 0;
 }
