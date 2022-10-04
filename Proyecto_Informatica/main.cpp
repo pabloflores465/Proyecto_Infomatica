@@ -327,6 +327,7 @@ int main() {
                             cin>>dess;
                             switch (dess)
                             {
+
                                 case 1:
                                 {
                                     descuentoaplicado=suma*0.75;
