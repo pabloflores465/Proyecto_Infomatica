@@ -230,7 +230,7 @@ int main() {
                     <<"El total de productos que usted comprara es de "<<ii<<"\n\n";
 
                 if(ii!=0) {
-                    cout<<"¿Usted cuenta con alguno de los siguientes seguro?\n"
+                    cout<<"¿Usted cuenta con alguno de los siguientes seguros?\n"
                         <<"Seguros GyT\n"
                         <<"Seguro Agromercantil\n"
                         <<"Aseguradora General, S.A.\n"
