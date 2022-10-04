@@ -96,9 +96,6 @@ int main() {
         20
     };
 
-
-
-
     //Modulo 2
     //Aseguradoras Usadas
     string aseguradora[5]{
