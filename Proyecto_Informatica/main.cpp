@@ -127,7 +127,7 @@ int main() {
         switch (modulos) {
             case 1: {
                 int modulo1;
-                float suma=0;
+                float suma=0.0;
                 int i=0;
                 int ii=0;
                 int descuentoseguro;
