@@ -348,6 +348,7 @@ int main() {
                         cout << aseguradora[seguro] << endl;
                         cout << "Su copago es: \n"
                              << (tazaDescuento[seguro]) * 100 << "%" << endl;
+
                         break;
                     }
                     //Mensaje de Error
@@ -360,12 +361,13 @@ int main() {
             }
             case 3: {
                 int info;
+                // info es para escoger que tipo de informacion se quiere ver
+
                 cout << "Ingrese el tipo de información que desea ver" << "\n";
                 cout << "Ingrese 1 para desplegar la informacion de la famacia \n";
                 cout << "Ingrese 2 para desplegar la información de las aseguradoras \n";
                 cin >> info;
-                switch (info)
-                {
+                switch (info){
                     case 1:
                         cout<<"Resumen del día \n";
                         cout << "Inventario de medicamentos:  \n";
@@ -377,14 +379,19 @@ int main() {
                         cout << "Total de ventas: ";
                         cout << "\n";
                         break;
-                }
-                    case 2: {
+                    case 2:
                         cout << "Clientes que usaron su seguro para comprar medicamentos: \n ";
                         cout << "\n";
                         cout << "La aseguradora con más afiliados es: \n";
+
                         cout << "\n";
 
-                    }
+                        break;
+                }
+
+
+
+
 
 
 
