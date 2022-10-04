@@ -130,7 +130,8 @@ int main() {
                 float suma=0.0;
                 int i=0;
                 int ii=0;
-                int titulartarjeta,fechavencimiento,codigotarjeta,numerotarjeta;
+                int descuentoseguro;
+                string titulartarjeta,fechavencimiento,codigotarjeta,numerotarjeta;
                 cout<<"Este modulo es para comprar productos, para salir de este modulo presione (0)\n"<<endl;
 
                 cout<<"Los productos que usted puede elegir son los siguientes: \n";
@@ -294,24 +295,39 @@ int main() {
                     }
                 }
                 while(modulo1!=0);
-                cout<<"El total a pagar es de "<<"Q"<<suma<<"\n";
-                cout<<"El total de productos que usted comprara es de "<<ii<<"\n\n";
-                cout<<"Ingrese la información de la tarjeta para pagar:\n\n";
-                cout<<"Ingrese el nombre del titular de la tarjeta:\n";
-                cin>>titulartarjeta;
                 cout<<"\n";
-                cout<<"Ingrese la fecha de vencimiento de la tarjeta, ejemplo:4/23\n";
-                cin>>fechavencimiento;
-                cout<<"\n";
-                cout<<"Ingrese el numero de su tarjeta, ejemplo 123456789\n";
-                cin>>numerotarjeta;
-                cout<<"\n";
-                cout<<"Ingrese el codigo de su tarjeta, ejemplo 456\n";
-                cin>>codigotarjeta;
-                cout<<"\n\n";
-                cout<<"PAGO EXITOSO\n";
+                cout<<"El total a pagar es de "<<"Q"<<suma<<"\n"
+                    <<"El total de productos que usted comprara es de "<<ii<<"\n\n"
+                    <<"¿Usted cuenta con alguno de los siguientes seguro?\n"
+                    <<"Seguros GyT\n"
+                    <<"Seguro Agromercantil\n"
+                    <<"Aseguradora General, S.A.\n"
+                    <<"Seguros el Roble\n"
+                    <<"Mapfre\n"
+                    <<"Presione 1 para si y 0 para no\n";
+                cin>>descuentoseguro;
 
-            break;
+
+
+                if(ii!=0) {
+                    cout<<"Ingrese la información de la tarjeta para pagar:\n\n"
+                        <<"Ingrese el nombre del titular de la tarjeta:\n";
+                    cin>>titulartarjeta;
+                    cout<<"\n"
+                        <<"Ingrese la fecha de vencimiento de la tarjeta, ejemplo:4/23\n";
+                    cin>>fechavencimiento;
+                    cout<<"\n"
+                        <<"Ingrese el numero de su tarjeta, ejemplo 123456789\n";
+                    cin>>numerotarjeta;
+                    cout<<"\n"
+                        <<"Ingrese el codigo de su tarjeta, ejemplo 456\n";
+                    cin>>codigotarjeta;
+                    cout<<"\n\n"
+                        <<"PAGO EXITOSO\n\n";
+                }
+
+
+                break;
             }
             case 2: {
                 //Inicia el Modulo 2
@@ -371,12 +387,15 @@ int main() {
                         break;
                     }
                 }
+                break;
             }
             case 3: {
+                cout<<"aqui modulo 3\n";
+                break;
 
             }
             default: {
-                cout << "Error ingrese un numero valido";
+                cout << "Error ingrese un numero valido\n\n";
                 break;
             }
         }
