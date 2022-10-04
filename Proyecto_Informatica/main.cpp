@@ -285,6 +285,7 @@ int main() {
 
                                 }
                             }
+
                             cout<<"El nuevo total a pagar con el descuento aplicado es de "<<descuentoaplicado<<"\n";
                         }
                         else {

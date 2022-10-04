@@ -1,3 +1,0 @@
-/Users/randyrivera/Downloads/Proyecto_Infomatica-main-4/Proyecto_Informatica/cmake-build-debug/CMakeFiles/Proyecto_Informatica.dir
-/Users/randyrivera/Downloads/Proyecto_Infomatica-main-4/Proyecto_Informatica/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/randyrivera/Downloads/Proyecto_Infomatica-main-4/Proyecto_Informatica/cmake-build-debug/CMakeFiles/rebuild_cache.dir
