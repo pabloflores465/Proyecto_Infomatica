@@ -316,7 +316,6 @@ int main() {
                         //AQUI SEÑORES
                         if (descuentoseguro==1)
                         {
-
                             int dess;
                             float descuentoaplicado=0;
                             cout<<"Ingrese el seguro con el que usted cuenta\n"
