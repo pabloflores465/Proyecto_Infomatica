@@ -127,7 +127,7 @@ int main() {
         switch (modulos) {
             case 1: {
                 int modulo1;
-                float suma=0;
+                float suma=0.0;
                 int i=0;
                 int ii=0;
                 int descuentoseguro;
@@ -292,11 +292,6 @@ int main() {
                             ii++;
                             break;
                         }
-                        default:
-                        {
-                            cout<<"\n";
-                            break;
-                        }
                     }
                 }
                 while(modulo1!=0);
@@ -318,8 +313,8 @@ int main() {
                         {
                             int dess;
                             float descuentoaplicado=0;
-                            cout<<"Ingrese el seguro con el que usted cuenta\n"
-                                <<"1=Seguros GyT\n"
+                            cout<<"Ingrese el seguro con el que usted cuenta\n";
+                            cout<<"1=Seguros GyT\n"
                                 <<"2=Seguro Agromercantil\n"
                                 <<"3=Aseguradora General, S.A.\n"
                                 <<"4=Seguros el Roble\n"
@@ -331,34 +326,23 @@ int main() {
                                 case 1:
                                 {
                                     descuentoaplicado=suma*0.75;
-                                    break;
                                 }
                                 case 2:
                                 {
-                                    descuentoaplicado = suma * 0.40;
-                                    break;
+                                    descuentoaplicado=suma*0.40;
                                 }
                                 case 3:
                                 {
-                                    descuentoaplicado = suma * 0.60;
-                                    break;
+                                    descuentoaplicado=suma*0.60;
                                 }
                                 case 4:
                                 {
-                                    descuentoaplicado = suma*0.5;
-                                    break;
+                                    descuentoaplicado=suma*0.5;
                                 }
                                 case 5:
                                 {
-                                    descuentoaplicado =suma*0.25;
-                                    break;
+                                    descuentoaplicado=suma*0.25;
                                 }
-                                default:
-                                {
-                                    cout<<"\n";
-                                    break;
-                                }
-
                             }
                             cout<<"El nuevo total a pagar con el descuento aplicado es de "<<descuentoaplicado<<"\n";
                         }
