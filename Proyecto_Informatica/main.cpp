@@ -129,6 +129,8 @@ int main() {
                 int modulo1;
                 float suma=0.0;
                 int i=0;
+                int ii=0;
+                int titulartarjeta,fechavencimiento,codigotarjeta,numerotarjeta;
                 cout<<"Este modulo es para comprar productos, para salir de este modulo presione (0)\n"<<endl;
 
                 cout<<"Los productos que usted puede elegir son los siguientes: \n";
@@ -215,13 +217,14 @@ int main() {
                     {
                         case 0:
                         {
-                            cout<<" ";
+                            cout<<"\n";
                             break;
                         }
                         case 1:
                         {
                             suma=suma+preciofarmacos[0];
                             existenciasfarmacos [0]--;
+                            ii++;
                             break;
 
                         }
@@ -229,59 +232,85 @@ int main() {
                         {
                             suma=suma+preciofarmacos[1];
                             existenciasfarmacos [1]--;
+                            ii++;
                             break;
                         }
                         case 3:
                         {
                             suma=suma+preciofarmacos[2];
                             existenciasfarmacos [2]--;
+                            ii++;
                             break;
                         }
                         case 4:
                         {
                             suma=suma+preciofarmacos[3];
                             existenciasfarmacos [3]--;
+                            ii++;
                             break;
                         }
                         case 5:
                         {
                             suma=suma+preciofarmacos[4];
                             existenciasfarmacos [4]--;
+                            ii++;
                             break;
                         }
                         case 6:
                         {
                             suma=suma+preciofarmacos[5];
                             existenciasfarmacos [5]--;
+                            ii++;
                             break;
                         }
                         case 7:
                         {
                             suma=suma+preciofarmacos[6];
                             existenciasfarmacos [6]--;
+                            ii++;
                             break;
                         }
                         case 8:
                         {
                             suma=suma+preciofarmacos[7];
                             existenciasfarmacos [7]--;
+                            ii++;
                             break;
                         }
                         case 9:
                         {
                             suma=suma+preciofarmacos[8];
                             existenciasfarmacos [8]--;
+                            ii++;
                             break;
                         }
                         case 10:
                         {
                             suma=suma+preciofarmacos[9];
                             existenciasfarmacos [9]--;
+                            ii++;
                             break;
                         }
                     }
                 }
                 while(modulo1!=0);
+                cout<<"El total a pagar es de "<<"Q"<<suma<<"\n";
+                cout<<"El total de productos que usted comprara es de "<<ii<<"\n\n";
+                cout<<"Ingrese la información de la tarjeta para pagar:\n\n";
+                cout<<"Ingrese el nombre del titular de la tarjeta:\n";
+                cin>>titulartarjeta;
+                cout<<"\n";
+                cout<<"Ingrese la fecha de vencimiento de la tarjeta, ejemplo:4/23\n";
+                cin>>fechavencimiento;
+                cout<<"\n";
+                cout<<"Ingrese el numero de su tarjeta, ejemplo 123456789\n";
+                cin>>numerotarjeta;
+                cout<<"\n";
+                cout<<"Ingrese el codigo de su tarjeta, ejemplo 456\n";
+                cin>>codigotarjeta;
+                cout<<"\n\n";
+                cout<<"PAGO EXITOSO\n";
+
             break;
             }
             case 2: {
