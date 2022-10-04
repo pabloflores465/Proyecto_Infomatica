@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
+
 int main() {
     //NO TOCAR Seleccion de los modulos
     int modulos;
@@ -127,57 +129,60 @@ int main() {
                 int modulo1;
                 float suma=0.0;
                 int i=0;
-                cout<<"Este modulo es para comprar productos, para salir de este modulo presione (0)"<<"\n";
+                cout<<"Este modulo es para comprar productos, para salir de este modulo presione (0)\n"<<endl;
+
                 cout<<"Los productos que usted puede elegir son los siguientes: \n";
-                cout<<"Presione (1) para elegir "<<nombrefarmacos[0]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[0]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[0]<<" "<<"("<<cantidadfarmacos[0]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [0]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (2) para elegir "<<nombrefarmacos[1]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[1]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[1]<<" "<<"("<<cantidadfarmacos[1]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [1]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (3) para elegir "<<nombrefarmacos[2]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[2]<<" "<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[2]<<" "<<"("<<cantidadfarmacos[2]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [2]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (4) para elegir "<<nombrefarmacos[3]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[3]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[3]<<" "<<"("<<cantidadfarmacos[3]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [3]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (5) para elegir "<<nombrefarmacos[4]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[4]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[4]<<" "<<"("<<cantidadfarmacos[4]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [4]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (6) para elegir "<<nombrefarmacos[5]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[5]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[5]<<" "<<"("<<cantidadfarmacos[5]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [5]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (7) para elegir "<<nombrefarmacos[6]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[6]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[6]<<" "<<"("<<cantidadfarmacos[6]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [6]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (8) para elegir "<<nombrefarmacos[7]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[7]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[6]<<" "<<"("<<cantidadfarmacos[7]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [7]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (9) para elegir "<<nombrefarmacos[8]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[8]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[8]<<" "<<"("<<cantidadfarmacos[8]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [8]<<"\n";
-                cout<<"\n";
-                cout<<"Presione (10) para elegir "<<nombrefarmacos[9]<<"\n";
-                cout<<"Precio: Q"<<preciofarmacos[9]<<"\n";
-                cout<<"Descripcion: "<<descripcionfarmacos[9]<<" "<<"("<<cantidadfarmacos[9]<<")"<<"\n";
-                cout<<"Las existencias de este producto son: "<<existenciasfarmacos [9]<<"\n";
+
+                cout<<"Presione (1) para elegir "<<nombrefarmacos[0]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[0]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[0]<<" "<<"("<<cantidadfarmacos[0]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [0]<<"\n\n";
+
+                cout<<"Presione (2) para elegir "<<nombrefarmacos[1]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[1]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[1]<<" "<<"("<<cantidadfarmacos[1]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [1]<<"\n\n";
+
+                cout<<"Presione (3) para elegir "<<nombrefarmacos[2]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[2]<<" "<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[2]<<" "<<"("<<cantidadfarmacos[2]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [2]<<"\n\n";
+
+                cout<<"Presione (4) para elegir "<<nombrefarmacos[3]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[3]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[3]<<" "<<"("<<cantidadfarmacos[3]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [3]<<"\n\n";
+
+                cout<<"Presione (5) para elegir "<<nombrefarmacos[4]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[4]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[4]<<" "<<"("<<cantidadfarmacos[4]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [4]<<"\n\n";
+
+
+                cout<<"Presione (6) para elegir "<<nombrefarmacos[5]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[5]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[5]<<" "<<"("<<cantidadfarmacos[5]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [5]<<"\n\n";
+
+                cout<<"Presione (7) para elegir "<<nombrefarmacos[6]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[6]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[6]<<" "<<"("<<cantidadfarmacos[6]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [6]<<"\n\n";
+
+                cout<<"Presione (8) para elegir "<<nombrefarmacos[7]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[7]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[6]<<" "<<"("<<cantidadfarmacos[7]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [7]<<"\n\n";
+
+                cout<<"Presione (9) para elegir "<<nombrefarmacos[8]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[8]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[8]<<" "<<"("<<cantidadfarmacos[8]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [8]<<"\n\n";
+
+                cout<<"Presione (10) para elegir "<<nombrefarmacos[9]<<"\n"
+                    <<"Precio: Q"<<preciofarmacos[9]<<"\n"
+                    <<"Descripcion: "<<descripcionfarmacos[9]<<" "<<"("<<cantidadfarmacos[9]<<")"<<"\n"
+                    <<"Las existencias de este producto son: "<<existenciasfarmacos [9]<<"\n\n";
 
                 do{
                     cout<<"Escriba aqui el numero del medicamento que quiere elegir";
@@ -328,6 +333,7 @@ int main() {
             }
             default: {
                 cout << "Error ingrese un numero valido";
+                break;
             }
         }
 
