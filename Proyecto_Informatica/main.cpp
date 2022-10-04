@@ -114,18 +114,18 @@ int main() {
             0.5,
             0.75,
     };
-    cout << "Ingrese al modulo que quiere ingresar\n";
-    cout << "Para modulo de farmacia presione 1\n";
-    cout << "Para modulo de seguros presione 2\n";
-    cout << "Para modulo de reportes presione 3\n";
-    cout << "Ingrese el numero 3 para finalizar el proceso\n";
+
     do {
+        cout << "Para modulo de farmacia presione 1\n";
+        cout << "Para modulo de seguros presione 2\n";
+        cout << "Para modulo de reportes presione 3\n";
+        cout << "Ingrese el numero 4 para finalizar el proceso\n";
         cout<<"Escriba aqui el modulo al que quiere acceder\n";
         cin >> modulos;
         switch (modulos) {
             case 1: {
                 int modulo1;
-                int suma=0.0;
+                float suma=0.0;
                 int i=0;
                 cout<<"Este modulo es para comprar productos, para salir de este modulo presione (0)"<<"\n";
                 cout<<"Los productos que usted puede elegir son los siguientes: \n";
@@ -180,7 +180,16 @@ int main() {
                 cout<<"Las existencias de este producto son: "<<existenciasfarmacos [9]<<"\n";
 
                 do{
-                    cout<<"Escriba aqui el numero del medicamento que quiere elegir\n";
+                    cout<<"Escriba aqui el numero del medicamento que quiere elegir";
+                    if (i!=0)
+                    {
+                        cout<<" o si ya no deseas seguir comprando un producto presiona 0\n";
+                    }
+                    else
+                    {
+                        cout<<"\n";
+                    }
+                    i++;
                     cin>>modulo1;
                     switch (modulo1)
                     {
@@ -251,14 +260,6 @@ int main() {
                             break;
                         }
                     }
-                    if (i!=0)
-                    {
-                        cout<<"\n";
-                        cout<<"Si ya no deseas seguir comprando un producto presiona 0\n";
-                    }
-                    i++;
-
-
                 }
                 while(modulo1!=0);
             break;
@@ -331,7 +332,7 @@ int main() {
         }
 
     }
-    while (modulos != 3);
+    while (modulos != 4);
 
     return 0;
 }
